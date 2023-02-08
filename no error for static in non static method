@@ -1,0 +1,12 @@
+class MyClass {
+  static myStaticMethod() {
+    console.log('I am a static method');
+  }
+
+  myNonStaticMethod() {
+    MyClass.myStaticMethod();
+  }
+}
+
+let myInstance = new MyClass();
+myInstance.myNonStaticMethod();
